@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('../public//assets/fonts/Poppins-Medium.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public//assets/fonts/Montserrat-Bold.ttf');
+  font-weight:bold;
+}
+html{
+  width:100%;
+  height:auto;
+}
+body{
+  width:100%;
+  height:auto;
+  margin:0;
+  font-family: 'poppins';
+}
+#root{
+  width:100%;
+  min-height:1919px;
+  max-height: 3474px;
+  /* height:auto; */
+}
+
+@media (max-width: 600px) {
+  * {
+      font-size: 14px; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  * {
+      font-size: 16px; 
+  }
+}
+
+@media (min-width: 901px) {
+  * {
+      font-size: 18px; 
+  }
+}
+

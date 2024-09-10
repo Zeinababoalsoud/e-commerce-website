@@ -48,9 +48,11 @@ function ShopPage(){
                         return <div className='products' 
                         key={i.id}>
                             <img src={i.image}/>
-                            <label>{i.title}</label>
-                            <label>{i.category}</label>
-                            <label>{i.price}</label>
+                            <div id="labels-container">
+                                <label id='title-label'>{i.title}</label>
+                                <label id='category-label'>{i.category}</label>
+                                <label id='price-label'>{i.price}</label>
+                            </div>
                             
                         </div> 
                         })

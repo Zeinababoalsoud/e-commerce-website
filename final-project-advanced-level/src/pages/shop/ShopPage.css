@@ -52,6 +52,7 @@
     height:446px;
     justify-content: space-between;
     background-color: #F4F5F7;
+    
 }
 .product-label{
     width:100%;
@@ -62,4 +63,21 @@
 .products img{
     width:285px;
     height: 300px;
+}
+#title-label{
+    font-weight: 700;
+    font-size: medium;
+}
+#category-label{
+    color:#898989;
+}
+#labels-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    padding: 10px 20px;
+}
+#price-label{
+    font-weight: 500;
 }

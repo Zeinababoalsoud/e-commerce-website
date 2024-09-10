@@ -81,3 +81,40 @@
 #price-label{
     font-weight: 500;
 }
+
+.products {
+    position: relative;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(58, 58, 58, 1); 
+    opacity: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; 
+}
+
+.products:hover .overlay,
+.products:active .overlay {
+    opacity: 0.9; 
+}
+
+.more-details {
+    padding: 10px 20px;
+    background-color: white; 
+    color: #B88E2F; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold;
+    height:48px;
+    width: 170px; 
+}  
+

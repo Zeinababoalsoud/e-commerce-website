@@ -53,9 +53,11 @@ function ShopPage(){
                                 <label id='category-label'>{i.category}</label>
                                 <label id='price-label'>{i.price}</label>
                             </div>
-                            <div className="overlay">
-                                <button className="more-details">More Details</button>
-                            </div>
+                            <Link to={`/product/${i.id}`}>
+                                <div className="overlay">
+                                    <button className="more-details">More Details</button>
+                                </div>
+                            </Link>
                         </div> 
                         })
                     }

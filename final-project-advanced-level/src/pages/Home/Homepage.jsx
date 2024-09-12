@@ -1,12 +1,13 @@
 import './Homepage.css';
 import Categories from '../../components/categories/Categories'
 import Footer from '../../components/footer/Footer';
+import img1 from '../../../public/assets/images/22.jpg'
 function Homepage(){
     const dataArray = [
         {
           id: 1,
           name: "electronics",
-          image: '../../../public/assets/images/22.jpg'
+          image: img1
         },
         {
           id: 2,

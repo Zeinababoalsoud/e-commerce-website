@@ -49,6 +49,7 @@ h1{
        margin-bottom: 30px;
        box-sizing: border-box;
        
+       
     }
     .Categories-content{
         width:100%;
@@ -57,6 +58,8 @@ h1{
         align-items: center;
         flex-direction: column;
         row-gap:20px;
+        background-color: aqua;
+        padding:0;
     }
 }
     

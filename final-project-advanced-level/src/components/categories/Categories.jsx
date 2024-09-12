@@ -7,7 +7,10 @@ function Categories(props){
         <Link to={'/ShopPage'}>
             <div className='Category-image'>
                 <img src={props.image}/>
-                <label className='hide'>{props.type}</label>
+                <label className='hide'>{props.name}</label>
+                <div className="overlay1">
+                    <button className="more-detail">{props.name}</button>
+                </div>
             </div>
         </Link> 
         

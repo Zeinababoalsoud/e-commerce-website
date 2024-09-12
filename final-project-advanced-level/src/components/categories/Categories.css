@@ -13,8 +13,10 @@
 .Category-image > img{
     height:100%;
     width:100%;
-
+    border-radius: 5px;
+    
 }
+
 /********************media query******************/
 @media (max-width: 600px) {
     .hide{
@@ -36,3 +38,40 @@
         }
       
 }
+.Category-image {
+    position: relative;
+    /* overflow: hidden;  */
+    transition: all 0.3s ease; 
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(58, 58, 58, 1); 
+    opacity: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; 
+}
+
+.Category-image:hover .overlay1,
+.Category-image:active .overlay1 {
+    opacity: 0.9; 
+}
+
+.more-detail {
+    padding: 10px 20px; 
+    color: #af8ab5; 
+    border: 2px dashed rgb(90, 90, 158),
+    2px dashed rgb(141, 141, 195); 
+    cursor: pointer; 
+    font-weight: bold;
+    height:48px;
+    width: 170px; 
+    background-color: transparent;
+    width:90%;
+} 

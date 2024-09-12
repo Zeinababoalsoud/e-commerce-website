@@ -25,7 +25,9 @@ function Layout (){
                 </ul>
             </div>
             <div id="cart-container">
-                <img src={cartImg} alt="cartTmg" />
+                <Link to='/Cart'>
+                    <img src={cartImg} alt="cartTmg" />
+                </Link>
 
             </div>
             

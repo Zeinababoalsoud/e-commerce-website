@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import logoImg from'../../../public/assets/images/logo-img.png'
 import { Link } from "react-router-dom";
 import Footer from '../../components/footer/Footer';
+// import { useParams } from 'react-router-dom';
+
 function ShopPage(){
         const [arrayofobject, setarrayofobject] = useState([]);
         useEffect(() =>{
@@ -20,6 +22,7 @@ function ShopPage(){
         }
         callingApi();
         },[]);
+        
 
     return(
         <>

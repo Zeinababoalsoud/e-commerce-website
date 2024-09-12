@@ -1,9 +1,30 @@
 import './Homepage.css';
-import imageCategory1 from '../../../public/assets/images/Mask Group.png'
-import imageCategory2 from '../../../public/assets/images/Image-living room.png'
-import imageCategory3 from '../../../public/assets/images/bedroom.png'
+import Categories from '../../components/categories/Categories'
 import Footer from '../../components/footer/Footer';
 function Homepage(){
+    const dataArray = [
+        {
+          id: 1,
+          name: "electronics",
+          image: '../../../public/assets/images/22.jpg'
+        },
+        {
+          id: 2,
+          name: "women's clothing",
+          image: '../../../public/assets/images/1.jpg'
+        },
+        {
+          id: 3,
+          name: "men's clothing",
+          image: '../../../public/assets/images/3.jpg'
+        }
+        ,
+        {
+          id: 4,
+          name: "jewellay",
+          image: '../../../public/assets/images/44.jpg'
+        }
+      ];
     return(
         <>
         <div id='homepage-container'>
@@ -11,29 +32,27 @@ function Homepage(){
             <div className="Categories-div">
 
                 <div className='header-div'>
-                <h3>Categories</h3>
+                  <h1>Categories</h1>
                 </div>
                 
                 <div className="Categories-content">
-                    <div className='Category-image'>
-                        <img src={imageCategory1}/>
-                        <label className='hide'>Dining</label>
-                    </div>
-                    <div className='Category-image'>
-                        <img src={imageCategory2}/>
-                        <label className='hide'>Living</label>
-                    </div>
-                    <div className='Category-image'>
-                        <img src={imageCategory3}/>
-                        <label className='hide'>Bedroom</label>
-                    </div>
-                    
+                    {dataArray.map(item => (
+                        <Categories 
+                          key={item.id}
+                          type={item.name}
+                          image={item.image}/>
+                             
+                        ))
+                    }
+
                 </div>
 
             </div>
         </div>
-        <Footer></Footer>
+         <Footer></Footer>
+       
         </>
+
     )
 }
 export default Homepage ;

@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import Counter from "../../components/counter/Counter";
 import Footer from '../../components/footer/Footer'
 const ProductDetails = () => {
-    const { id } = useParams(); // الحصول على معرف المنتج من الرابط
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
@@ -43,7 +43,7 @@ const ProductDetails = () => {
                     <div className="top">
                         <label className="label1">{product.title}</label>
                         <label id="lab">{product.price}</label>
-                        <div className="stars">★★★★★ | <span id="special-span"> </span></div>
+                        <div className="stars">★★★★★ | <span id="special-span">{product.rating.rate} </span></div>
                         <p className='p-des'>{product.description}</p>
                         <label>Size</label>
                         <div className="sizes">
@@ -59,7 +59,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                     <div className="bottom">
-                        <Counter></Counter>
+                        <Counter counter={product.rating.count}></Counter>
                         <div className="quantity-control add-cart">
                              <button className="add-to-cart">Add to Cart</button>
                         </div>

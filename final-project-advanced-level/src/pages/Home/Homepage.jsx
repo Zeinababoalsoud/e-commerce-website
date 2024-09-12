@@ -2,6 +2,9 @@ import './Homepage.css';
 import Categories from '../../components/categories/Categories'
 import Footer from '../../components/footer/Footer';
 import img1 from '../../../public/assets/images/22.jpg'
+import img2 from '../../../public/assets/images/1.jpg'
+import img3 from '../../../public/assets/images/3.jpg'
+import img4 from '../../../public/assets/images/44.jpg'
 function Homepage(){
     const dataArray = [
         {
@@ -12,18 +15,18 @@ function Homepage(){
         {
           id: 2,
           name: "women's clothing",
-          image: '../../../public/assets/images/1.jpg'
+          image: img2
         },
         {
           id: 3,
           name: "men's clothing",
-          image: '../../../public/assets/images/3.jpg'
+          image: img3
         }
         ,
         {
           id: 4,
           name: "jewellay",
-          image: '../../../public/assets/images/44.jpg'
+          image: img4
         }
       ];
     return(

@@ -65,9 +65,8 @@
 
 .more-detail {
     padding: 10px 20px; 
-    color: #af8ab5; 
-    border: 2px dashed rgb(90, 90, 158),
-    2px dashed rgb(141, 141, 195); 
+    color: #57b48d; 
+    border: 2px solid rgb(30, 30, 40);
     cursor: pointer; 
     font-weight: bold;
     height:48px;

@@ -89,6 +89,9 @@
     .cart-container{
         flex-direction: column;
     }
+    .cart-container div{
+        width:100%;
+    }
     
 }
     

@@ -88,6 +88,8 @@
 @media (max-width: 600px) {
     .cart-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .cart-container div{
         width:90%;
@@ -99,6 +101,8 @@
    
     .cart-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     } 
     .cart-container div{
         width:100%;

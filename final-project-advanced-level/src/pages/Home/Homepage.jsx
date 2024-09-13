@@ -7,11 +7,7 @@ import img3 from '../../../public/assets/images/3333.jpg'
 import img4 from '../../../public/assets/images/44.jpg'
 function Homepage(){
     const dataArray = [
-        {
-          id: 1,
-          name: "electronics",
-          image: img1
-        },
+        
         {
           id: 2,
           name: "women's clothing",
@@ -27,7 +23,12 @@ function Homepage(){
           id: 4,
           name: "jewellay",
           image: img4
-        }
+        },
+        {
+          id: 1,
+          name: "electronics",
+          image: img1
+        },
       ];
     return(
         <>

@@ -4,6 +4,7 @@ import icon1 from '../../../public/assets/images/icon1.png';
 import icon2 from '../../../public/assets/images/icon2.png';
 import icon3 from '../../../public/assets/images/icon3.png';
 import { useParams} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 import Counter from "../../components/counter/Counter";
 import Footer from '../../components/footer/Footer'
@@ -32,7 +33,7 @@ const ProductDetails = () => {
         <div>
 
             <div className="header">
-                 <a href="#">Home</a> &gt; <a href="#">Shop</a> | <span id="header-span" href="#">{product.title}</span>
+                 <Link href="/">Home</Link> &gt; <Link href="/ShopPage">Shop</Link> | <span id="header-span" href="#">{product.title}</span>
             </div>
 
             <div className="container">

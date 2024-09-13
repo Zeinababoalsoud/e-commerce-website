@@ -153,6 +153,9 @@ input, textarea {
     #contact-page-container{
         width:100%;
     }
+    #btn{
+        width:100%;
+    } 
 }
 @media (min-width: 601px) and (max-width: 900px) {
     .child{
@@ -188,6 +191,7 @@ input, textarea {
         width:80%;
         padding:10px;
         box-sizing: border-box;
+        
     }
     #btn{
         width:98%;
